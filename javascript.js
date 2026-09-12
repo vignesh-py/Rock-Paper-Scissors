@@ -1,4 +1,8 @@
 
+let humanScore=0;
+let computerScore=0;
+
+
 function getComputerChoice() {  /*This function returns "Rock" "Paper" or "Scissors*/
   num=Math.floor(Math.random() * 3); /* Generates number from 0 to 2 and stored in number*/
   if (num ===0){
@@ -10,7 +14,11 @@ function getComputerChoice() {  /*This function returns "Rock" "Paper" or "Sciss
   else {
    return "Scissors";
   }
-  
 }
 
-console.log(getComputerChoice());
+ 
+function getHumanChoice(){
+  choice=prompt("Enter your option");
+  return choice;
+}
+
