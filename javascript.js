@@ -25,10 +25,10 @@ function playRound(humanChoice, computerChoice) {           /*Compare both Human
     Choice=humanChoice.toLowerCase()+computerChoice;         /* and increments the winners score by +1*/
     console.log(Choice)
       if (Choice ==="rockrock"){      
-          alert("Its a tie!");
+          alert("Its a Tie!");
       }
       else if(Choice ==="scissorsrock"){
-          alert("You lose! Rock beats Scissors");
+          alert("You Lose! Rock beats Scissors");
           return computerScore++ ;                         
       }
       else if(Choice ==="paperrock"){
@@ -36,18 +36,18 @@ function playRound(humanChoice, computerChoice) {           /*Compare both Human
           return humanScore++ ;
       }
       else if(Choice ==="rockscissors"){
-          alert("You win! Rock beats Scissors");
+          alert("You Win! Rock beats Scissors");
           return humanScore++ ;
       }
       else if(Choice ==="scissorsscissors"){
-          alert("Its a tie!");
+          alert("Its a Tie!");
       }
       else if(Choice ==="paperscissors"){
-          alert("You lose! Scissors beats Paper")
+          alert("You Lose! Scissors beats Paper")
           return computerScore++ ;
       }
       else if(Choice ==="rockpaper"){
-          alert("You lose! Paper beats Rock");
+          alert("You Lose! Paper beats Rock");
           return computerScore++ ;
       }
       else if(Choice ==="scissorspaper"){
@@ -55,10 +55,10 @@ function playRound(humanChoice, computerChoice) {           /*Compare both Human
           return humanScore++ ;
       }
       else if(Choice ==="paperpaper"){
-          alert("Its a tie! ");
+          alert("Its a Tie! ");
       }
       else {
-          alert("Something went Wrong");
+          alert("Something went wrong");
       }
 }
 
@@ -84,5 +84,21 @@ function playGame(){                                           /* plays for 5 ti
 }
 
 playGame();
+console.log(`humanScore: ${humanScore}`);
+console.log(`computer score: ${computerScore}`);
+alert(` Your Score is :${humanScore}\n Computer score is :${computerScore}`); 
+
+if (humanScore>computerScore){                  /* compares who got higher score and dispalys winner*/
+    alert("Yay! you WIN:)");     
+    console.log("Yay! you WIN:)");                    
+}
+else if (humanScore<computerScore){
+    alert("OH! you LOST :(");
+    console.log("OH! you LOST :(");
+}
+else{
+    alert("Its a TIE ;)");
+    console.log("Its a TIE ;)");
+}
 
 
