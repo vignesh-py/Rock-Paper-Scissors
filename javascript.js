@@ -17,9 +17,10 @@ function getComputerChoice() {  /*This function returns "Rock" "Paper" or "Sciss
 }
 
 function getHumanChoice(){               /* Getting user input */
-  let choice=prompt("Lets play Rock,Paper, scissors!!,Enter your Choice: ");
-  return choice;
+  let hInput=prompt("Lets Play Rock,Paper,Scissors!!,Enter Your Choice: ");
+  return hInput;
 }
+
 
 function playRound(humanChoice, computerChoice) {           /*Compare both Human and Computers input and chooses the winner*/
     Choice=humanChoice.toLowerCase()+computerChoice;         /* and increments the winners score by +1*/
