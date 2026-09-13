@@ -22,34 +22,34 @@ function getHumanChoice(){
 }
 
 function playRound(humanChoice, computerChoice) {
-    Choice=humanChoice+computerChoice;
+    Choice=humanChoice.toLowerCase()+computerChoice;
     console.log(Choice)
-      if (Choice ==="RockRock"){
-          alert("Its a tie");
+      if (Choice ==="rockRock"){
+          alert("Its a tie!");
       }
-      else if(Choice ==="ScissorsRock"){
-          alert("You loose Rock beats Scissors")
+      else if(Choice ==="scissorsRock"){
+          alert("You lose! Rock beats Scissors")
       }
-      else if(Choice ==="PaperRock"){
-          alert("You Win Paper beats Rock")
+      else if(Choice ==="paperRock"){
+          alert("You Win! Paper beats Rock")
       }
-      else if(Choice ==="RockScissors"){
-          alert("You win Rock beats Scissors")
+      else if(Choice ==="rockScissors"){
+          alert("You win! Rock beats Scissors")
       }
-      else if(Choice ==="ScissorsScissors"){
-          alert("Its a tie")
+      else if(Choice ==="scissorsScissors"){
+          alert("Its a tie!")
       }
-      else if(Choice ==="PaperScissors"){
-          alert("You loose Scissors beats Paper")
+      else if(Choice ==="paperScissors"){
+          alert("You lose! Scissors beats Paper")
       }
-      else if(Choice ==="RockPaper"){
-          alert("You loose Paper beats Rock")
+      else if(Choice ==="rockPaper"){
+          alert("You lose! Paper beats Rock")
       }
-      else if(Choice ==="ScissorsPaper"){
-          alert("You win Scissors beats Paper")
+      else if(Choice ==="scissorsPaper"){
+          alert("You win! Scissors beats Paper")
       }
-      else if(Choice ==="PaperPaper"){
-          alert("Its a tie ")
+      else if(Choice ==="paperPaper"){
+          alert("Its a tie! ")
       }
       else {
           alert("Something went Wrong")
